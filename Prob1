@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int package;
+	double PA, PB , PC;
+	float time, price;
+
+	cout<<"What type of package?: ";
+	cin>>PA>>PB>>PC;
+	cout<<' ';
+	cout<< "number of hours: ";
+	cin>>time;
+	cout<< ' ';
+
+	
+	switch(package)
+		
+	
+	{
+	
+	case 'PA':
+	if(time>=10 && time <= 744)
+	{
+	
+	price = (995 + (time - 10) * 20);
+	cout<< "your bill is: ";
+	cin>>price;
+	break;
+}
+	else if (time >= 745){
+	
+	cout<<"INVALID NUMBER OF HOURS";
+	break;
+}
+	case 'PB':
+	if(time> 20 && time <=744)
+{
+
+	price = (1495 + (time - 20)*10);
+	
+cout<< "your bill is: ";
+	cin>>price;
+		break;
+}
+	else if (time >= 745)
+	{
+	
+	cout<<"INVALID NUMBER OF HOURS";
+	break;
+}
+	else
+	{
+	
+		price = 1995;
+	
+		cout<< "your bill is: ";
+	cin>>price;
+	break;
+}
+	default:
+
+	
+	cout<< "invalid type of package";
+	
+}
+
+		return 0;
+}
