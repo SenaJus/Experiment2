@@ -1,0 +1,66 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int x, y ;
+	double V,z ;
+	z = 2.5;
+	cout<< "Enter x: ";
+	cin>>x;
+	cout<< "enter y: ";
+	cin >> y;
+	
+	switch(x)
+	{
+		case 1:
+			if (x = 1 && y > 1 && y < 5)
+			{
+			
+			V = (x*y*z);
+			cout<< "the answer is: "<< setw(10)<<setprecision(2)<<V;
+		
+			break;
+		}
+			
+		case 2:
+			if(x = 1 && y >=5)
+			{
+			
+			V = (x + (y / z));
+			cout<< "the answer is: "<<setw(10)<<setprecision(2)<<V;
+		
+			break;
+		}
+		case 3:
+			if (x = 2 && y <= 5)
+			{
+			
+			V = ((x - y) / z);
+			cout<< "the answer is: "<<setw(10)<<setprecision(2)<<V;
+		
+			break;
+		}
+		case 4:
+			if(x = 2 && y >5)
+			{
+			
+			V = (x -sqrt(y + z) );
+			cout<< "the answer is: "<<setw(10)<<setprecision(2)<<V;
+		
+			break;
+		}
+			else 
+			{
+			
+			V = (x + y + z);
+			cout<< "the answer is: "<<setw(10)<<setprecision(2)<<V;
+		
+			break;
+		
+	}
+}
+	
+	return 0;
+}
