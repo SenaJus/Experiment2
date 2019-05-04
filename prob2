@@ -1,0 +1,42 @@
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    char Y,N;
+	int a ;
+	double charge, consumption, bill;
+	int demand;
+	demand = 35;
+	charge = 1.10;
+	
+
+	cout<< "enter consumption: "<<endl;
+	cin>> consumption;
+	cout<< "are you unpaid? Y or N?"<<endl;
+	cin>> a >>Y >> N;
+	
+	switch(a)
+	{
+		case 'Y' : 
+	
+		bill = demand + ( consumption * charge) + 20;
+		cout<< "your bill is: "<<endl;
+		cin>> bill;
+		break;
+		
+		case 'N':
+	
+		bill = demand + ( consumption * charge);
+		cout<< "your bill is: "<<endl;
+		cin>> bill;
+		break;
+		
+		default:
+		cout<< "INVALID ENTRY!"<<endl;
+	}
+	
+	return 0;
+}
